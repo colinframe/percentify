@@ -1,4 +1,6 @@
 ![Build status](https://travis-ci.com/colinframe/percentify.svg?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a98ee52a6c5feedd2db6/maintainability)](https://codeclimate.com/github/colinframe/percentify/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a98ee52a6c5feedd2db6/test_coverage)](https://codeclimate.com/github/colinframe/percentify/test_coverage)
 
 # Percentify
 
