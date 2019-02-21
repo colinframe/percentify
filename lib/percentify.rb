@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'percentify/version'
 require 'percentify/core_extensions/numeric'
 

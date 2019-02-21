@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe Numeric do
-  subject(:integer) { 2 }
-
   describe '#as_percentage_of(number)' do
     context 'as an integer' do
       subject(:as_percentage_of) { 2.as_percentage_of(10) }

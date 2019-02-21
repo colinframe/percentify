@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Percentify
   module CoreExtensions
     module Numeric
