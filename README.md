@@ -1,4 +1,4 @@
-https://travis-ci.com/colinframe/percentify.svg?branch=master
+![Build status](https://travis-ci.com/colinframe/percentify.svg?branch=master)
 
 # Percentify
 
