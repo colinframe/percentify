@@ -1,3 +1,5 @@
+https://travis-ci.com/colinframe/percentify.svg?branch=master
+
 # Percentify
 
 TODO: Write a gem description
