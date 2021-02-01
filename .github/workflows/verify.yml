@@ -24,11 +24,13 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-      - name: Rubocop checks
-        uses: gimenete/rubocop-action@1.0
-      - name: Reek checks
-        run: |
-          bin/reek
+
+      - name: Code review using Rubocop
+        uses: moneyforward/rubocop-action@v0.0.6
+
+      - name: Code review using Reek
+        uses: moneyforward/reek-action@v0.0.1
+
       - name: Run security checks
         run: |
           bin/bundler-audit --update
