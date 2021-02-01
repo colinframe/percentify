@@ -25,12 +25,10 @@ jobs:
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
 
-      - name: Code review using Rubocop
-        uses: moneyforward/rubocop-action@v0.0.6
-
-      - name: Code review using Reek
-        uses: moneyforward/reek-action@v0.0.1
-
+      - name: Run linters
+        run: |
+          bin/rubocop --parallel
+          bin/reek
       - name: Run security checks
         run: |
           bin/bundler-audit --update
