@@ -24,10 +24,11 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-
-      - name: Run linters
+      - name: Rubocop checks
+        uses: gimenete/rubocop-action@1.0
+      - name: Reek checks
         run: |
-          bin/rubocop --parallel
+          bin/reek
       - name: Run security checks
         run: |
           bin/bundler-audit --update
